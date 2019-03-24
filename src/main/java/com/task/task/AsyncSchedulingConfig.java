@@ -61,6 +61,7 @@ public class AsyncSchedulingConfig implements AsyncConfigurer, SchedulingConfigu
     }
 
 
+    @Override
     public void destroy() {
         WebApplicationContext currentWebApplicationContext = ContextLoader.getCurrentWebApplicationContext();
         if(currentWebApplicationContext != null) {
